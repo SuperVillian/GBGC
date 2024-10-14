@@ -1,5 +1,5 @@
 # GBGC
-This is the official implementation for "GBGC: Efficient and Adaptive Graph Coarsening viaGranular-Ball Computing" (NIPS 2024).
+This is the official implementation for "GBGC: Efficient and Adaptive Graph Coarsening viaGranular-Ball Computing".
 
 ## dataset
 because "OVCAR-8H","P388H","SF-295H" are very large.
