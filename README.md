@@ -12,7 +12,7 @@ The initialization directory is the root directory `./`.
 
 ```
 experiment 1 acc and time
-nohup python -u GB_coarsening.py > ./result/resultGBGC.log 2>&1 &
+nohup python -u GB_coarsening.py > ./resultGBGC.log 2>&1 &
 
 experiment 2 different Coarsening rate
-nohup python -u GBGC_ratio.py > ./result/GBGC_ratio.log 2>&1 &
+nohup python -u GBGC_ratio.py > ./GBGC_ratio.log 2>&1 &
