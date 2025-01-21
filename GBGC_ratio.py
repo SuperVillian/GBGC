@@ -44,7 +44,10 @@ def assign_nodes_to_multiple_centers(G, centers):
 
 
 def qity(graph):
-    return graph.number_of_edges() / len(graph)
+    avg_degree = graph.number_of_edges() / len(graph)
+    global_clustering = nx.transitivity(graph)
+    qity =avg_degree + global_clustering
+    return qity
 
 
 # Evaluate the most suitable value for Granular-Ball division and select the largest division
