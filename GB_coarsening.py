@@ -22,10 +22,10 @@ def normalizeLaplacian(G):
     return np.eye(n) - sym_normalize_adj(G)
 
 def qity(graph):
-    avg_degree = graph.number_of_edges() / len(graph)
-    global_clustering = nx.transitivity(graph)
-    qity =avg_degree + global_clustering
-    return qity
+    avg_degree = graph.number_of_edges() / len(graph)
+    global_clustering = nx.transitivity(graph)
+    qity =avg_degree + global_clustering
+    return qity
 
 def split_ball(graph, split_GB_list):
     if len(graph) == 1:
