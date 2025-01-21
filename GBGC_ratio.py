@@ -134,7 +134,7 @@ def init_GB_graph(graph, init_GB_num, n):
         max_degree_node, remaining_graph = split_graph(remaining_graph, init_GB_num)
         center_nodes.append(max_degree_node)
     center_nodes_dict = assign_nodes_to_multiple_centers(graph, center_nodes)
-    init_GB_list = [nx.subgraph(graph, cluster) for cluster in center_nodes_dict.values()]
+    init_GB_list = [[nx.subgraph(graph, cluster)] for cluster in center_nodes_dict.values()]
     father_qity = qity(graph)
     for init_GB in init_GB_list:
         init_GB.append(father_qity)
