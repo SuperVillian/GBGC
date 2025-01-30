@@ -48,11 +48,11 @@ def split_ball(graph, split_GB_list):
     if len(graph_a.edges()) == 0 or len(graph_b.edges()) == 0:
         split_GB_list.append(graph)
     else:
-        avg_degree = graph.number_of_edges() / len(graph)
-        avg_degree_a = graph_a.number_of_edges() / len(graph_a)
-        avg_degree_b = graph_b.number_of_edges() / len(graph_b)
+        qity_p = qity(graph)
+        qity_a = qity(graph_a)
+        qity_b = qity(graph_b)
  
-        if avg_degree < avg_degree_a + avg_degree_b:
+        if qity_p < qity_a + qity_b:
             split_ball(graph_a, split_GB_list)
             split_ball(graph_b, split_GB_list)
         else:
