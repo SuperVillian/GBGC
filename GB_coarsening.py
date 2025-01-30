@@ -48,9 +48,9 @@ def split_ball(graph, split_GB_list):
     if len(graph_a.edges()) == 0 or len(graph_b.edges()) == 0:
         split_GB_list.append(graph)
     else:
-        father_qity = qity(GB_graph)
-        son_qity_a = qity(GB_graph_a)
-        son_qity_b = qity(GB_graph_b)
+        father_qity = qity(graph)
+        son_qity_a = qity(graph_a)
+        son_qity_b = qity(graph_b)
 
  
         if father_qity < son_qity_a + son_qity_b:
